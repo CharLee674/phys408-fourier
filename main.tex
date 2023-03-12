@@ -1,0 +1,130 @@
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+% Define formatting and import packages.
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+\documentclass[amsmath,amssymb,12pt]{article}
+\usepackage[legalpaper, margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{siunitx}
+
+% Hyperlinks.
+\definecolor{darkmagenta}{rgb}{0.55, 0.0, 0.55}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=cyan,      
+    urlcolor=darkmagenta,
+    }
+
+% Choose bibliography style.
+\bibliographystyle{apsrev4-2}
+
+% Define new commands below (if needed).
+\newcommand{\bra}[1]{\left\langle #1\right|}
+\newcommand{\ket}[1]{\left| #1\right\rangle}
+\newcommand{\E}{{\cal E}}
+
+
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+% TITLE PAGE
+% Do not change script commands here, only fill in with your text.
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+
+\begin{document}
+\title{Title}
+\author{LastName, FirstName (StudentNumber)}
+\date{submission date}
+\maketitle
+
+\noindent
+\underline{Lab name:} \\
+\underline{Lab station:} \\
+\underline{Lab section:} \\
+\underline{Assigned TA}: \\
+\underline{Lab \#:} \\
+\underline{Note to teaching team:}
+\vspace{\baselineskip}  % add blank line.
+
+\begin{abstract}
+
+\end{abstract}
+
+% Reset section count.
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+% RESEARCH NOTE
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+\newpage
+\section*{RESEARCH NOTE}  % do not change.
+
+
+
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+% EXPERIMENTS
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+\newpage
+\section*{EXPERIMENTS}  % do not change
+\section{}
+
+\section{Aligning the spatial filter}
+
+In this portion of the experiment,
+
+\section{Diffraction from a slit}
+
+\enumerate{}
+
+% Mandatory question item symbol
+\begin{enumerate}[label=\textcolor{red}{(\Alph*)}]
+% Example of script for figure (need to uncomment below):
+% \begin{figure}[bt]
+% \begin{center}
+% \includegraphics[width=0.3\textwidth]{figures/yourfigure.pdf.}
+% \caption{}
+% \label{fig:yourlabel}
+% \end{center}
+% \end{figure}
+
+% Mandatory question item symbol
+\begin{enumerate}[label=\textcolor{red}{(\Alph*)}]
+\item
+\end{enumerate}
+
+% Optional question item symbol
+\begin{enumerate}[label=\textcolor{blue}{(\roman*)}]
+\item
+\end{enumerate}
+
+
+
+% Citation commands: \cite{}, \ref{eq:}, \ref{fig:}
+% Equation command:
+% \begin{equation}
+% \label{eq:michelsonSpeed}
+% I = \frac{2}{r_1r_2}\left(1+\cos[kd]\right)
+% \end{equation}
+
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+% Bibliography.
+%---------------------------------------------------------------------
+%---------------------------------------------------------------------
+\bibliography{bibliography}
+
+
+\end {document}
